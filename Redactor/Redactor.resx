@@ -117,23 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Title.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="appearanceBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="petBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="weaponBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="appearancePicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAW4AAAFuCAYAAAChovKPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAL1JJREFUeF7tnU2PHcX1hx3GHosQZTHZsUD+BF5Zs0IhQRgkbNkQwIsrFl6QVVgk
+        vAAADrwBlbxySQAAL1JJREFUeF7tnU2PHcX1hx3GHosQZTHZsUD+BF5Zs0IhQRgkbNkQwIsrFl6QVVgk
         UiQEmsHIBhIiRXkjUiSUCAmZTVYoCt8Bsfp/AOKwIFGi2ODMJI4NhP85laqi+s6Ze2/frurXB+lx9z09
         r6erf+dU1W8uR7744ovO+eyzz9zxv//975E7d+4c+fTTTx2ff/65xjcltiXHe4X7hBO//e1vT3zyySf3
         ycdrTK9tCkdu3boVv86//vUvd3779m13BIBpo7rw73//e1O0Zctrx32//OUvT8jxxM2bN1VbKnpy48YN
@@ -341,7 +329,7 @@
   <data name="petPicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAW4AAAFuCAYAAAChovKPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAL1JJREFUeF7tnU2PHcX1hx3GHosQZTHZsUD+BF5Zs0IhQRgkbNkQwIsrFl6QVVgk
+        vAAADrwBlbxySQAAL1JJREFUeF7tnU2PHcX1hx3GHosQZTHZsUD+BF5Zs0IhQRgkbNkQwIsrFl6QVVgk
         UiQEmsHIBhIiRXkjUiSUCAmZTVYoCt8Bsfp/AOKwIFGi2ODMJI4NhP85laqi+s6Ze2/frurXB+lx9z09
         r6erf+dU1W8uR7744ovO+eyzz9zxv//975E7d+4c+fTTTx2ff/65xjcltiXHe4X7hBO//e1vT3zyySf3
         ycdrTK9tCkdu3boVv86//vUvd3779m13BIBpo7rw73//e1O0Zctrx32//OUvT8jxxM2bN1VbKnpy48YN
@@ -549,7 +537,7 @@
   <data name="weaponPicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAW4AAAFuCAYAAAChovKPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAL1JJREFUeF7tnU2PHcX1hx3GHosQZTHZsUD+BF5Zs0IhQRgkbNkQwIsrFl6QVVgk
+        vAAADrwBlbxySQAAL1JJREFUeF7tnU2PHcX1hx3GHosQZTHZsUD+BF5Zs0IhQRgkbNkQwIsrFl6QVVgk
         UiQEmsHIBhIiRXkjUiSUCAmZTVYoCt8Bsfp/AOKwIFGi2ODMJI4NhP85laqi+s6Ze2/frurXB+lx9z09
         r6erf+dU1W8uR7744ovO+eyzz9zxv//975E7d+4c+fTTTx2ff/65xjcltiXHe4X7hBO//e1vT3zyySf3
         ycdrTK9tCkdu3boVv86//vUvd3779m13BIBpo7rw73//e1O0Zctrx32//OUvT8jxxM2bN1VbKnpy48YN
