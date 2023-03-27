@@ -51,9 +51,11 @@
       // Title
       // 
       this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Title.Location = new System.Drawing.Point(148, 20);
+      this.Title.Location = new System.Drawing.Point(197, 25);
+      this.Title.Margin = new System.Windows.Forms.Padding(4);
       this.Title.Name = "Title";
-      this.Title.Size = new System.Drawing.Size(513, 53);
+      this.Title.ReadOnly = true;
+      this.Title.Size = new System.Drawing.Size(683, 64);
       this.Title.TabIndex = 0;
       this.Title.Text = "Create your character";
       this.Title.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -61,20 +63,23 @@
       // appearanceBox
       // 
       this.appearanceBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-      this.appearanceBox.Location = new System.Drawing.Point(44, 116);
+      this.appearanceBox.Location = new System.Drawing.Point(59, 143);
+      this.appearanceBox.Margin = new System.Windows.Forms.Padding(4);
       this.appearanceBox.Name = "appearanceBox";
-      this.appearanceBox.Size = new System.Drawing.Size(170, 29);
+      this.appearanceBox.ReadOnly = true;
+      this.appearanceBox.Size = new System.Drawing.Size(225, 34);
       this.appearanceBox.TabIndex = 1;
       this.appearanceBox.Text = "Appearance";
       this.appearanceBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-      this.appearanceBox.UseWaitCursor = true;
       // 
       // petBox
       // 
       this.petBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-      this.petBox.Location = new System.Drawing.Point(316, 116);
+      this.petBox.Location = new System.Drawing.Point(421, 143);
+      this.petBox.Margin = new System.Windows.Forms.Padding(4);
       this.petBox.Name = "petBox";
-      this.petBox.Size = new System.Drawing.Size(170, 29);
+      this.petBox.ReadOnly = true;
+      this.petBox.Size = new System.Drawing.Size(225, 34);
       this.petBox.TabIndex = 2;
       this.petBox.Text = "Pet";
       this.petBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -83,9 +88,11 @@
       // weaponBox
       // 
       this.weaponBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-      this.weaponBox.Location = new System.Drawing.Point(582, 116);
+      this.weaponBox.Location = new System.Drawing.Point(776, 143);
+      this.weaponBox.Margin = new System.Windows.Forms.Padding(4);
       this.weaponBox.Name = "weaponBox";
-      this.weaponBox.Size = new System.Drawing.Size(170, 29);
+      this.weaponBox.ReadOnly = true;
+      this.weaponBox.Size = new System.Drawing.Size(225, 34);
       this.weaponBox.TabIndex = 3;
       this.weaponBox.Text = "Weapon";
       this.weaponBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -93,9 +100,10 @@
       // appearancePicture
       // 
       this.appearancePicture.Image = ((System.Drawing.Image)(resources.GetObject("appearancePicture.Image")));
-      this.appearancePicture.Location = new System.Drawing.Point(44, 184);
+      this.appearancePicture.Location = new System.Drawing.Point(59, 226);
+      this.appearancePicture.Margin = new System.Windows.Forms.Padding(4);
       this.appearancePicture.Name = "appearancePicture";
-      this.appearancePicture.Size = new System.Drawing.Size(170, 119);
+      this.appearancePicture.Size = new System.Drawing.Size(227, 146);
       this.appearancePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
       this.appearancePicture.TabIndex = 4;
       this.appearancePicture.TabStop = false;
@@ -104,9 +112,10 @@
       // petPicture
       // 
       this.petPicture.Image = ((System.Drawing.Image)(resources.GetObject("petPicture.Image")));
-      this.petPicture.Location = new System.Drawing.Point(316, 184);
+      this.petPicture.Location = new System.Drawing.Point(421, 226);
+      this.petPicture.Margin = new System.Windows.Forms.Padding(4);
       this.petPicture.Name = "petPicture";
-      this.petPicture.Size = new System.Drawing.Size(170, 119);
+      this.petPicture.Size = new System.Drawing.Size(227, 146);
       this.petPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
       this.petPicture.TabIndex = 5;
       this.petPicture.TabStop = false;
@@ -114,9 +123,10 @@
       // weaponPicture
       // 
       this.weaponPicture.Image = ((System.Drawing.Image)(resources.GetObject("weaponPicture.Image")));
-      this.weaponPicture.Location = new System.Drawing.Point(582, 184);
+      this.weaponPicture.Location = new System.Drawing.Point(776, 226);
+      this.weaponPicture.Margin = new System.Windows.Forms.Padding(4);
       this.weaponPicture.Name = "weaponPicture";
-      this.weaponPicture.Size = new System.Drawing.Size(170, 119);
+      this.weaponPicture.Size = new System.Drawing.Size(227, 146);
       this.weaponPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
       this.weaponPicture.TabIndex = 6;
       this.weaponPicture.TabStop = false;
@@ -124,73 +134,82 @@
       // 
       // nextAppearance
       // 
-      this.nextAppearance.Location = new System.Drawing.Point(129, 321);
+      this.nextAppearance.Location = new System.Drawing.Point(172, 395);
+      this.nextAppearance.Margin = new System.Windows.Forms.Padding(4);
       this.nextAppearance.Name = "nextAppearance";
-      this.nextAppearance.Size = new System.Drawing.Size(85, 54);
+      this.nextAppearance.Size = new System.Drawing.Size(113, 66);
       this.nextAppearance.TabIndex = 7;
       this.nextAppearance.Text = "Next";
       this.nextAppearance.UseVisualStyleBackColor = true;
+      this.nextAppearance.Click += new System.EventHandler(this.nextAppearance_Click);
       // 
       // previousAppearance
       // 
-      this.previousAppearance.Location = new System.Drawing.Point(44, 321);
+      this.previousAppearance.Location = new System.Drawing.Point(59, 395);
+      this.previousAppearance.Margin = new System.Windows.Forms.Padding(4);
       this.previousAppearance.Name = "previousAppearance";
-      this.previousAppearance.Size = new System.Drawing.Size(85, 54);
+      this.previousAppearance.Size = new System.Drawing.Size(113, 66);
       this.previousAppearance.TabIndex = 8;
       this.previousAppearance.Text = "Previous";
       this.previousAppearance.UseVisualStyleBackColor = true;
       // 
       // previousPet
       // 
-      this.previousPet.Location = new System.Drawing.Point(316, 321);
+      this.previousPet.Location = new System.Drawing.Point(421, 395);
+      this.previousPet.Margin = new System.Windows.Forms.Padding(4);
       this.previousPet.Name = "previousPet";
-      this.previousPet.Size = new System.Drawing.Size(85, 54);
+      this.previousPet.Size = new System.Drawing.Size(113, 66);
       this.previousPet.TabIndex = 9;
       this.previousPet.Text = "Previous";
       this.previousPet.UseVisualStyleBackColor = true;
       // 
       // nextPet
       // 
-      this.nextPet.Location = new System.Drawing.Point(401, 321);
+      this.nextPet.Location = new System.Drawing.Point(535, 395);
+      this.nextPet.Margin = new System.Windows.Forms.Padding(4);
       this.nextPet.Name = "nextPet";
-      this.nextPet.Size = new System.Drawing.Size(85, 54);
+      this.nextPet.Size = new System.Drawing.Size(113, 66);
       this.nextPet.TabIndex = 10;
       this.nextPet.Text = "Next";
       this.nextPet.UseVisualStyleBackColor = true;
+      this.nextPet.Click += new System.EventHandler(this.nextPet_Click);
       // 
       // previousWeapon
       // 
-      this.previousWeapon.Location = new System.Drawing.Point(582, 321);
+      this.previousWeapon.Location = new System.Drawing.Point(776, 395);
+      this.previousWeapon.Margin = new System.Windows.Forms.Padding(4);
       this.previousWeapon.Name = "previousWeapon";
-      this.previousWeapon.Size = new System.Drawing.Size(85, 54);
+      this.previousWeapon.Size = new System.Drawing.Size(113, 66);
       this.previousWeapon.TabIndex = 11;
       this.previousWeapon.Text = "Previous";
       this.previousWeapon.UseVisualStyleBackColor = true;
       // 
       // nextWeapon
       // 
-      this.nextWeapon.Location = new System.Drawing.Point(667, 321);
+      this.nextWeapon.Location = new System.Drawing.Point(889, 395);
+      this.nextWeapon.Margin = new System.Windows.Forms.Padding(4);
       this.nextWeapon.Name = "nextWeapon";
-      this.nextWeapon.Size = new System.Drawing.Size(85, 54);
+      this.nextWeapon.Size = new System.Drawing.Size(113, 66);
       this.nextWeapon.TabIndex = 12;
       this.nextWeapon.Text = "Next";
       this.nextWeapon.UseVisualStyleBackColor = true;
       // 
       // saveButton
       // 
-      this.saveButton.Location = new System.Drawing.Point(723, 404);
+      this.saveButton.Location = new System.Drawing.Point(964, 497);
+      this.saveButton.Margin = new System.Windows.Forms.Padding(4);
       this.saveButton.Name = "saveButton";
-      this.saveButton.Size = new System.Drawing.Size(65, 34);
+      this.saveButton.Size = new System.Drawing.Size(87, 42);
       this.saveButton.TabIndex = 13;
       this.saveButton.Text = "Save";
       this.saveButton.UseVisualStyleBackColor = true;
       // 
       // mainForm
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-      this.ClientSize = new System.Drawing.Size(800, 450);
+      this.ClientSize = new System.Drawing.Size(1067, 554);
       this.Controls.Add(this.saveButton);
       this.Controls.Add(this.nextWeapon);
       this.Controls.Add(this.previousWeapon);
@@ -205,6 +224,7 @@
       this.Controls.Add(this.petBox);
       this.Controls.Add(this.appearanceBox);
       this.Controls.Add(this.Title);
+      this.Margin = new System.Windows.Forms.Padding(4);
       this.Name = "mainForm";
       this.Text = "Form1";
       this.Load += new System.EventHandler(this.mainForm_Load);
