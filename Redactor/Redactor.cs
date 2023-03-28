@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
+//Origibator
 namespace Redactor
 {
   public partial class mainForm : Form

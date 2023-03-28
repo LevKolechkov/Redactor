@@ -28,7 +28,6 @@
     /// </summary>
     private void InitializeComponent()
     {
-      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
       this.appearancePicture = new System.Windows.Forms.PictureBox();
       this.petPicture = new System.Windows.Forms.PictureBox();
       this.weaponPicture = new System.Windows.Forms.PictureBox();
@@ -40,7 +39,7 @@
       this.nextWeapon = new System.Windows.Forms.Button();
       this.saveButton = new System.Windows.Forms.Button();
       this.Close = new System.Windows.Forms.Label();
-      this.label1 = new System.Windows.Forms.Label();
+      this.characterLabel = new System.Windows.Forms.Label();
       this.CloseButton = new System.Windows.Forms.Label();
       ((System.ComponentModel.ISupportInitialize)(this.appearancePicture)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.petPicture)).BeginInit();
@@ -49,7 +48,7 @@
       // 
       // appearancePicture
       // 
-      this.appearancePicture.Image = ((System.Drawing.Image)(resources.GetObject("appearancePicture.Image")));
+      this.appearancePicture.Image = global::Redactor.Properties.Resources.Empty;
       this.appearancePicture.Location = new System.Drawing.Point(44, 159);
       this.appearancePicture.Name = "appearancePicture";
       this.appearancePicture.Size = new System.Drawing.Size(170, 119);
@@ -59,7 +58,7 @@
       // 
       // petPicture
       // 
-      this.petPicture.Image = ((System.Drawing.Image)(resources.GetObject("petPicture.Image")));
+      this.petPicture.Image = global::Redactor.Properties.Resources.Empty;
       this.petPicture.Location = new System.Drawing.Point(316, 159);
       this.petPicture.Name = "petPicture";
       this.petPicture.Size = new System.Drawing.Size(170, 119);
@@ -69,7 +68,7 @@
       // 
       // weaponPicture
       // 
-      this.weaponPicture.Image = ((System.Drawing.Image)(resources.GetObject("weaponPicture.Image")));
+      this.weaponPicture.Image = global::Redactor.Properties.Resources.Empty;
       this.weaponPicture.Location = new System.Drawing.Point(582, 159);
       this.weaponPicture.Name = "weaponPicture";
       this.weaponPicture.Size = new System.Drawing.Size(170, 119);
@@ -156,16 +155,16 @@
       this.Close.TabIndex = 15;
       this.Close.Text = "X";
       // 
-      // label1
+      // characterLabel
       // 
-      this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-      this.label1.Font = new System.Drawing.Font("Albertus Medium", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label1.Location = new System.Drawing.Point(0, 0);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(800, 145);
-      this.label1.TabIndex = 16;
-      this.label1.Text = "Create your character";
-      this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.characterLabel.Dock = System.Windows.Forms.DockStyle.Top;
+      this.characterLabel.Font = new System.Drawing.Font("Albertus Medium", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.characterLabel.Location = new System.Drawing.Point(0, 0);
+      this.characterLabel.Name = "characterLabel";
+      this.characterLabel.Size = new System.Drawing.Size(800, 145);
+      this.characterLabel.TabIndex = 16;
+      this.characterLabel.Text = "Create your character";
+      this.characterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
       // CloseButton
       // 
@@ -186,7 +185,7 @@
       this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
       this.ClientSize = new System.Drawing.Size(800, 450);
       this.Controls.Add(this.CloseButton);
-      this.Controls.Add(this.label1);
+      this.Controls.Add(this.characterLabel);
       this.Controls.Add(this.Close);
       this.Controls.Add(this.saveButton);
       this.Controls.Add(this.nextWeapon);
@@ -222,7 +221,7 @@
     private System.Windows.Forms.Button nextWeapon;
     private System.Windows.Forms.Button saveButton;
     private System.Windows.Forms.Label Close;
-    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.Label characterLabel;
     private System.Windows.Forms.Label CloseButton;
   }
 }
