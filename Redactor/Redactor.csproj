@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="Caretaker.cs" />
     <Compile Include="Memento.cs" />
-    <Compile Include="Originator.cs" />
     <Compile Include="Redactor.cs">
       <SubType>Form</SubType>
     </Compile>
