@@ -250,7 +250,6 @@
       this.Margin = new System.Windows.Forms.Padding(4);
       this.Name = "mainForm";
       this.Text = "Form1";
-      this.Load += new System.EventHandler(this.mainForm_Load);
       ((System.ComponentModel.ISupportInitialize)(this.appearancePicture)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.petPicture)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.weaponPicture)).EndInit();

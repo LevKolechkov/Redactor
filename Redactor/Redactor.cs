@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 //Origibator
@@ -6,6 +7,15 @@ namespace Redactor
 {
   public partial class mainForm : Form
   {
+    int appearanceNumber = 0;
+    int petNumber = 0;
+    int weaponNumber = 0;
+
+    public mainForm()
+    {
+      InitializeComponent();
+    }
+
     static public void PrintNextAppearance(ref int appearanceNumber, PictureBox appearancePicture)
     {
       switch (++appearanceNumber)
@@ -124,26 +134,6 @@ namespace Redactor
           PrintPreviousWeapon(ref weaponNumber, weaponPicture);
           break;
       }
-    }
-
-
-    int appearanceNumber = 0;
-    int petNumber = 0;
-    int weaponNumber = 0;
-
-    public mainForm()
-    {
-      InitializeComponent();
-    }
-
-    private void mainForm_Load(object sender, EventArgs e)
-    {
-
-    }
-
-    private void petBox_TextChanged(object sender, EventArgs e)
-    {
-
     }
 
     private void nextAppearance_Click(object sender, EventArgs e)

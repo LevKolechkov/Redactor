@@ -5,10 +5,16 @@ namespace Redactor
 {
   class Caretaker
   {
-    public List<Memento> Saves { get; set; }
-    public Caretaker()
+    private object memento;
+
+    public void SaveState(IOriginator originator)
     {
-      Saves = new List<Memento>();
+      memento = originator.GetMemento();
+    }
+
+    public void RestoreState(IOriginator originator)
+    {
+      originator.SetMemento(memento);
     }
   }
 }
