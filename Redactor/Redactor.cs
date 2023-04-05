@@ -170,5 +170,20 @@ namespace Redactor
     {
       this.Close();
     }
+
+    private void saveButton_Click(object sender, EventArgs e)
+    {
+      Numbers numbers = new Numbers(appearanceNumber, petNumber, weaponNumber);
+
+      Caretaker caretaker = new Caretaker();
+
+      caretaker.SaveState(numbers);
+
+      FileStream saveFile = null;
+
+      Program.GetSaveFile(saveFile);
+
+
+    }
   }
 }

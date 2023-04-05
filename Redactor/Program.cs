@@ -11,24 +11,20 @@ namespace Redactor
   {
     [STAThread]
 
-    public static FileStream GetFilePath()
+    public static void GetSaveFile(FileStream saveFile)
     {
       string filePath = Path.Combine(Application.StartupPath, "Save.txt");
 
-      return new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+      saveFile = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+
     }
 
     static void Main()
     {
-
-      GetFilePath();
-
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
       mainForm mainForm = new mainForm();
       Application.Run(mainForm);
-
-      
     }
   }
 }
