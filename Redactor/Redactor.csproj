@@ -49,7 +49,7 @@
     <Compile Include="Caretaker.cs" />
     <Compile Include="IOriginator.cs" />
     <Compile Include="Memento.cs" />
-    <Compile Include="Numbers.cs" />
+    <Compile Include="Characteristic.cs" />
     <Compile Include="Redactor.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -7,12 +7,18 @@ namespace Redactor
 {
   public partial class mainForm : Form
   {
-    int appearanceNumber = 0;
-    int petNumber = 0;
-    int weaponNumber = 0;
+    int appearanceNumber;
+    int petNumber;
+    int weaponNumber;
 
     public mainForm()
     {
+      Characteristic characteristic = new Characteristic();
+
+      appearanceNumber = characteristic.AppearanceNumber;
+      petNumber = characteristic.PetNumber;
+      weaponNumber = characteristic.WeaponNumber;
+
       InitializeComponent();
     }
 
@@ -173,17 +179,16 @@ namespace Redactor
 
     private void saveButton_Click(object sender, EventArgs e)
     {
-      Numbers numbers = new Numbers(appearanceNumber, petNumber, weaponNumber);
+      string filePath = Path.Combine(Application.StartupPath, "Save.txt");
 
-      Caretaker caretaker = new Caretaker();
+      if (File.Exists(filePath)) 
+      {
 
-      caretaker.SaveState(numbers);
-
-      FileStream saveFile = null;
-
-      Program.GetSaveFile(saveFile);
-
-
+      }
+      else 
+      {
+        
+      }
     }
   }
 }

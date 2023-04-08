@@ -45,6 +45,7 @@
       this.petLabel = new System.Windows.Forms.Label();
       this.weaponLabel = new System.Windows.Forms.Label();
       this.restoreButton = new System.Windows.Forms.Button();
+      this.stateBox = new System.Windows.Forms.TextBox();
       ((System.ComponentModel.ISupportInitialize)(this.appearancePicture)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.petPicture)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.weaponPicture)).BeginInit();
@@ -225,12 +226,24 @@
       this.restoreButton.Text = "Restore";
       this.restoreButton.UseVisualStyleBackColor = true;
       // 
+      // stateBox
+      // 
+      this.stateBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.stateBox.Location = new System.Drawing.Point(467, 404);
+      this.stateBox.Multiline = true;
+      this.stateBox.Name = "stateBox";
+      this.stateBox.ReadOnly = true;
+      this.stateBox.Size = new System.Drawing.Size(179, 34);
+      this.stateBox.TabIndex = 22;
+      this.stateBox.Visible = false;
+      // 
       // mainForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
       this.ClientSize = new System.Drawing.Size(800, 450);
+      this.Controls.Add(this.stateBox);
       this.Controls.Add(this.restoreButton);
       this.Controls.Add(this.weaponLabel);
       this.Controls.Add(this.petLabel);
@@ -277,6 +290,7 @@
     private System.Windows.Forms.Label petLabel;
     private System.Windows.Forms.Label weaponLabel;
     private System.Windows.Forms.Button restoreButton;
+    private System.Windows.Forms.TextBox stateBox;
   }
 }
 

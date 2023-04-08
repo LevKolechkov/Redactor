@@ -3,17 +3,17 @@
 namespace Redactor
 {
   //Originator
-  public class Numbers : IOriginator
+  class Characteristic : IOriginator
   {
     public int AppearanceNumber { get; set; }
     public int PetNumber { get; set; }
     public int WeaponNumber { get; set; }
 
-    public Numbers(int appearanceNumber, int petNumber, int weaponNumber) 
+    public Characteristic() 
     {
-      AppearanceNumber = appearanceNumber;
-      PetNumber = petNumber;
-      WeaponNumber = weaponNumber;
+      AppearanceNumber = 0;
+      PetNumber = 0;
+      WeaponNumber = 0;
     }
 
     public object GetMemento()
