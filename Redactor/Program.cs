@@ -23,7 +23,9 @@ namespace Redactor
     {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
+
       mainForm mainForm = new mainForm();
+
       Application.Run(mainForm);
     }
   }

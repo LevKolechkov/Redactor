@@ -11,16 +11,18 @@ namespace Redactor
     int petNumber;
     int weaponNumber;
 
+    Characteristic characteristic = null;
+
     public mainForm()
     {
-      Characteristic characteristic = new Characteristic();
+      characteristic = new Characteristic();
 
       appearanceNumber = characteristic.AppearanceNumber;
       petNumber = characteristic.PetNumber;
       weaponNumber = characteristic.WeaponNumber;
 
       InitializeComponent();
-    }
+    } 
 
     static public void PrintNextAppearance(ref int appearanceNumber, PictureBox appearancePicture)
     {
@@ -177,14 +179,32 @@ namespace Redactor
       this.Close();
     }
 
+    string filePath = Path.Combine(Application.StartupPath, "Save.txt");
+
     private void saveButton_Click(object sender, EventArgs e)
     {
-      string filePath = Path.Combine(Application.StartupPath, "Save.txt");
-      
       stateBox.Visible = true;
-      stateBox.Text = "Пример текста";
+      stateBox.Text = "Сохранение...";
 
-      File.WriteAllText(filePath, "Пример текста");
+      Caretaker ct = new Caretaker();
+      ct.SaveState(characteristic);
+
+
+
+      stateBox.Text = "Сохранение выполнено";
+    }
+
+    private void restoreButton_Click(object sender, EventArgs e)
+    {
+      stateBox.Visible = true;
+      stateBox.Text = "Сброс...";
+
+      File.Delete(filePath);
+      File.Create(filePath).Dispose();
+
+      File.WriteAllText(filePath, $"{0}\n{0}\n{0}");
+
+      stateBox.Text = "Сброс выполнен";
     }
   }
 }
