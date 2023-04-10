@@ -180,15 +180,11 @@ namespace Redactor
     private void saveButton_Click(object sender, EventArgs e)
     {
       string filePath = Path.Combine(Application.StartupPath, "Save.txt");
+      
+      stateBox.Visible = true;
+      stateBox.Text = "Пример текста";
 
-      if (File.Exists(filePath)) 
-      {
-
-      }
-      else 
-      {
-        
-      }
+      File.WriteAllText(filePath, "Пример текста");
     }
   }
 }
