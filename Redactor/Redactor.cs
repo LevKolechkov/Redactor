@@ -186,10 +186,12 @@ namespace Redactor
       stateBox.Visible = true;
       stateBox.Text = "Сохранение...";
 
+      characteristic.AppearanceNumber = appearanceNumber;
+      characteristic.PetNumber = petNumber;
+      characteristic.WeaponNumber = weaponNumber;
+
       Caretaker ct = new Caretaker();
       ct.SaveState(characteristic);
-
-
 
       stateBox.Text = "Сохранение выполнено";
     }

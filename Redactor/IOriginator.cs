@@ -5,7 +5,7 @@ namespace Redactor
 {
   internal interface IOriginator
   {
-    object GetMemento();
+    Memento GetMemento();
     void SetMemento(object memento);
   }
 }

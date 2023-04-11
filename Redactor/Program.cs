@@ -11,14 +11,6 @@ namespace Redactor
   {
     [STAThread]
 
-    public static void GetSaveFile(FileStream saveFile)
-    {
-      string filePath = Path.Combine(Application.StartupPath, "Save.txt");
-
-      saveFile = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
-
-    }
-
     static void Main()
     {
       Application.EnableVisualStyles();

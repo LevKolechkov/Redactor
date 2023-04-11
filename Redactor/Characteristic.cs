@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Windows.Forms;
 
 namespace Redactor
 {
@@ -16,25 +18,20 @@ namespace Redactor
       WeaponNumber = 0;
     }
 
-    public object GetMemento()
+    public Memento GetMemento()
     {
       return new Memento
       {
-        NumberOfAppearance = AppearanceNumber,
-        NumberOfPet = PetNumber,
-        NumberOfWeapon = WeaponNumber
+        filePathToSaveFile = Path.Combine(Application.StartupPath, "Save.txt"),
+        AppearanceNumber = this.AppearanceNumber,
+        PetNumber = this.PetNumber,
+        WeaponNumber = this.WeaponNumber
       };
     }
 
     public void SetMemento(object memento)
     {
-      if (memento is Memento)
-      {
-        var mem = memento as Memento;
-        mem.NumberOfAppearance = AppearanceNumber;
-        mem.NumberOfPet = PetNumber;
-        mem.NumberOfWeapon = WeaponNumber;
-      }
+      
     }
   }
 }
