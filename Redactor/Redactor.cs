@@ -26,7 +26,8 @@ namespace Redactor
 
     static public void PrintNextAppearance(ref int appearanceNumber, PictureBox appearancePicture)
     {
-      switch (++appearanceNumber)
+      ++appearanceNumber;
+      switch (appearanceNumber)
       {
         case 1:
           appearancePicture.Image = Properties.Resources.MrBeast;
@@ -46,7 +47,8 @@ namespace Redactor
 
     static public void PrintPreviousAppearance(ref int appearanceNumber, PictureBox appearancePicture)
     {
-      switch (--appearanceNumber)
+      --appearanceNumber;
+      switch (appearanceNumber)
       {
         case 1:
           appearancePicture.Image = Properties.Resources.MrBeast;
@@ -66,7 +68,8 @@ namespace Redactor
 
     static public void PrintNextPet(ref int petNumber, PictureBox petPicture)
     {
-      switch (++petNumber)
+      ++petNumber;
+      switch (petNumber)
       {
         case 1:
           petPicture.Image = Properties.Resources.Cheems;
@@ -86,7 +89,8 @@ namespace Redactor
     
     static public void PrintPreviousPet(ref int petNumber, PictureBox petPicture)
     {
-      switch (--petNumber)
+      --petNumber;
+      switch (petNumber)
       {
         case 1:
           petPicture.Image = Properties.Resources.Cheems;
@@ -106,7 +110,8 @@ namespace Redactor
 
     static public void PrintNextWeapon(ref int weaponNumber, PictureBox weaponPicture)
     {
-      switch (++weaponNumber)
+      ++weaponNumber;
+      switch (weaponNumber)
       {
         case 1:
           weaponPicture.Image = Properties.Resources.Screwdriver;
@@ -126,7 +131,8 @@ namespace Redactor
 
     static public void PrintPreviousWeapon(ref int weaponNumber, PictureBox weaponPicture)
     {
-      switch (--weaponNumber)
+      --weaponNumber;
+      switch (weaponNumber)
       {
         case 1:
           weaponPicture.Image = Properties.Resources.Screwdriver;
@@ -199,14 +205,69 @@ namespace Redactor
     private void restoreButton_Click(object sender, EventArgs e)
     {
       stateBox.Visible = true;
-      stateBox.Text = "Сброс...";
+      stateBox.Text = "Восстанавливаю...";
 
-      File.Delete(filePath);
-      File.Create(filePath).Dispose();
+      characteristic.AppearanceNumber = appearanceNumber;
+      characteristic.PetNumber = petNumber;
+      characteristic.WeaponNumber = weaponNumber;
 
-      File.WriteAllText(filePath, $"{0}\n{0}\n{0}");
+      Caretaker ct = new Caretaker();
+      ct.RestoreState(characteristic);
+      
 
-      stateBox.Text = "Сброс выполнен";
+      appearanceNumber = characteristic.AppearanceNumber;
+      petNumber = characteristic.PetNumber;
+      weaponNumber = characteristic.WeaponNumber;
+
+      switch (appearanceNumber)
+      {
+        case 0:
+          appearancePicture.Image = Properties.Resources.Empty;
+          break;
+        case 1:
+          appearancePicture.Image = Properties.Resources.MrBeast;
+          break;
+        case 2:
+          appearancePicture.Image = Properties.Resources.Scott;
+          break;
+        case 3:
+          appearancePicture.Image = Properties.Resources.YandereDev;
+          break;
+      }
+
+      switch (petNumber)
+      {
+        case 0:
+          petPicture.Image = Properties.Resources.Empty;
+          break;
+        case 1:
+          petPicture.Image = Properties.Resources.Cheems;
+          break;
+        case 2:
+          petPicture.Image = Properties.Resources.Feddy;
+          break;
+        case 3:
+          petPicture.Image = Properties.Resources.Unicorn;
+          break;
+      }
+
+      switch (weaponNumber)
+      {
+        case 0:
+          weaponPicture.Image = Properties.Resources.Empty;
+          break;
+        case 1:
+          weaponPicture.Image = Properties.Resources.Screwdriver;
+          break;
+        case 2:
+          weaponPicture.Image = Properties.Resources.Rag;
+          break;
+        case 3:
+          weaponPicture.Image = Properties.Resources.Money;
+          break;
+      }
+
+      stateBox.Text = "Восстановление выполнено";
     }
   }
 }

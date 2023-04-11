@@ -15,10 +15,13 @@ namespace Redactor
       string filePath = memento.filePathToSaveFile;
 
       File.WriteAllText(filePath, $"{memento.AppearanceNumber}\n{memento.PetNumber}\n{memento.WeaponNumber}");
+
     }
 
     public void RestoreState(IOriginator originator)
     {
+      Memento memento = new Memento();
+
       originator.SetMemento(memento);
     }
   }

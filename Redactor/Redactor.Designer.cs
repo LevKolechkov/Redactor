@@ -264,7 +264,7 @@
       this.Controls.Add(this.appearancePicture);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
       this.Name = "mainForm";
-      this.Text = "Form1";
+      this.Text = "Redactor";
       ((System.ComponentModel.ISupportInitialize)(this.appearancePicture)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.petPicture)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.weaponPicture)).EndInit();

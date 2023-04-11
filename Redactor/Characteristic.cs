@@ -11,6 +11,7 @@ namespace Redactor
     public int PetNumber { get; set; }
     public int WeaponNumber { get; set; }
 
+    
     public Characteristic() 
     {
       AppearanceNumber = 0;
@@ -29,9 +30,22 @@ namespace Redactor
       };
     }
 
-    public void SetMemento(object memento)
+    public void SetMemento(Memento memento)
     {
+      var mem = memento;
+      mem.filePathToSaveFile = Path.Combine(Application.StartupPath, "Save.txt");
+
+      string[] lines = File.ReadAllLines(mem.filePathToSaveFile);
+      int[] numbers = new int[lines.Length];
       
+      for (int index = 0; index < lines.Length; ++index) 
+      {
+        numbers[index] = Convert.ToInt32(lines[index]);
+      }
+
+      AppearanceNumber = numbers[0];
+      PetNumber = numbers[1];
+      WeaponNumber = numbers[2];
     }
   }
 }
