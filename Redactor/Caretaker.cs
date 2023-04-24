@@ -12,7 +12,7 @@ namespace Redactor
     {
       memento = originator.GetMemento();
 
-      string filePath = memento.filePathToSaveFile;
+      string filePath = memento.FilePathToSaveFile;
 
       File.WriteAllText(filePath, $"{memento.AppearanceNumber}\n{memento.PetNumber}\n{memento.WeaponNumber}");
 

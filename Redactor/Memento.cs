@@ -10,7 +10,7 @@ namespace Redactor
     public int PetNumber { get; set; }
     public int WeaponNumber { get; set; }
 
-    public string filePathToSaveFile;
+    public string FilePathToSaveFile { get; set; }
 
     public Memento()
     {
