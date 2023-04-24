@@ -23,7 +23,7 @@ namespace Redactor
     {
       return new Memento
       {
-        filePathToSaveFile = Path.Combine(Application.StartupPath, "Save.txt"),
+        FilePathToSaveFile = Path.Combine(Application.StartupPath, "Save.txt"),
         AppearanceNumber = this.AppearanceNumber,
         PetNumber = this.PetNumber,
         WeaponNumber = this.WeaponNumber
@@ -32,10 +32,10 @@ namespace Redactor
 
     public void SetMemento(Memento memento)
     {
-      var mem = memento;
-      mem.filePathToSaveFile = Path.Combine(Application.StartupPath, "Save.txt");
+      var mementoForSet = memento;
+      mementoForSet.FilePathToSaveFile = Path.Combine(Application.StartupPath, "Save.txt");
 
-      string[] lines = File.ReadAllLines(mem.filePathToSaveFile);
+      string[] lines = File.ReadAllLines(mementoForSet.FilePathToSaveFile);
       int[] numbers = new int[lines.Length];
       
       for (int index = 0; index < lines.Length; ++index) 
