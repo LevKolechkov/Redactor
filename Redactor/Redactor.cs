@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -268,6 +269,22 @@ namespace Redactor
       }
 
       stateBox.Text = "Восстановление выполнено";
+    }
+
+    Point lastPoint;
+
+    private void characterLabel_MouseMove(object sender, MouseEventArgs e)
+    {
+      if (e.Button == MouseButtons.Left) 
+      {
+        this.Left += e.X - lastPoint.X;
+        this.Top += e.Y - lastPoint.Y;
+      }
+    }
+
+    private void characterLabel_MouseDown(object sender, MouseEventArgs e)
+    {
+        lastPoint = new Point(e.X, e.Y);
     }
   }
 }
