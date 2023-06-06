@@ -171,6 +171,8 @@
       this.characterLabel.TabIndex = 16;
       this.characterLabel.Text = "Create your character";
       this.characterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.characterLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.characterLabel_MouseDown);
+      this.characterLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.characterLabel_MouseMove);
       // 
       // CloseButton
       // 
